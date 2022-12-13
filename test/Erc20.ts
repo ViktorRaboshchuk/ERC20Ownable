@@ -12,8 +12,6 @@ describe("Vaska", function (){
     [owner, addr1, addr2] = await ethers.getSigners();
     const ERC20Token = await hre.ethers.getContractFactory("Vaska", {signer: owner});
     erc20Token = await ERC20Token.deploy();
-    console.log("Owner", owner.address);
-    console.log("Addr2", addr2.address);
   });
 
   // describe("Check contract constructor", () => {
